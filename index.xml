@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ben2277&#39;s Blog</title>
-    <link>http://example.org/</link>
+    <link>https://www.example.org/</link>
     <description>Recent content on Ben2277&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 24 Sep 2020 16:47:25 +0800</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 24 Sep 2020 16:47:25 +0800</lastBuildDate><atom:link href="https://www.example.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>First</title>
-      <link>http://example.org/post/first/</link>
+      <link>https://www.example.org/post/first/</link>
       <pubDate>Thu, 24 Sep 2020 16:47:25 +0800</pubDate>
       
-      <guid>http://example.org/post/first/</guid>
+      <guid>https://www.example.org/post/first/</guid>
       <description>Hello Hugo  aaa bbb ccc  </description>
     </item>
     
