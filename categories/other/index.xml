@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Ben2277&#39;s Blog</title>
-    <link>https://ben2277.github.io/post/</link>
-    <description>Recent content in Posts on Ben2277&#39;s Blog</description>
+    <title>other on Ben2277&#39;s Blog</title>
+    <link>https://ben2277.github.io/categories/other/</link>
+    <description>Recent content in other on Ben2277&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language><atom:link href="https://ben2277.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-CN</language><atom:link href="https://ben2277.github.io/categories/other/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>blog搭建日志</title>
       <link>https://ben2277.github.io/post/2020-09-25-hugoblog-create-log/</link>
