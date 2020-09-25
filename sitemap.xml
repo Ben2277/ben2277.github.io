@@ -3,20 +3,48 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://ben2277.github.io/about/</loc>
-    <lastmod>2018-06-01T12:34:56+00:00</lastmod>
+    <loc>https://ben2277.github.io/</loc>
+    <lastmod>2020-09-25T12:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ben2277.github.io/</loc>
+    <loc>https://ben2277.github.io/post/2020-09-25-hugoblog-create-log/</loc>
+    <lastmod>2020-09-25T12:00:00+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://ben2277.github.io/categories/</loc>
+    <lastmod>2020-09-25T12:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ben2277.github.io/tags/Github-Pages/</loc>
+    <lastmod>2020-09-25T12:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ben2277.github.io/tags/Hugo/</loc>
+    <lastmod>2020-09-25T12:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ben2277.github.io/categories/other/</loc>
+    <lastmod>2020-09-25T12:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ben2277.github.io/post/</loc>
+    <lastmod>2020-09-25T12:00:00+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://ben2277.github.io/tags/</loc>
+    <lastmod>2020-09-25T12:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ben2277.github.io/about/</loc>
+    <lastmod>2018-06-01T12:34:56+00:00</lastmod>
   </url>
   
   <url>

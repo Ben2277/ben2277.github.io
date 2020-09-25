@@ -5,11 +5,12 @@
     <link>https://ben2277.github.io/tags/Github-Pages/</link>
     <description>Recent content in Github Pages on Ben2277&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language><atom:link href="https://ben2277.github.io/tags/Github-Pages/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 25 Sep 2020 12:00:00 +0800</lastBuildDate><atom:link href="https://ben2277.github.io/tags/Github-Pages/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>blog搭建日志</title>
       <link>https://ben2277.github.io/post/2020-09-25-hugoblog-create-log/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 25 Sep 2020 12:00:00 +0800</pubDate>
       
       <guid>https://ben2277.github.io/post/2020-09-25-hugoblog-create-log/</guid>
       <description>blog搭建日志 技术栈选择： GitHub Pages推出的目的是旨在托管GitHub库中的个人，组织或项目页面（GitHub Pages is designed to host your personal, organization, or project pages from a GitHub repository.）。 可以方便的省略购买服务器、域名等一系列复杂的操作，实现一个静态网站。 Hugo是最受欢迎的开源静态站点生成器之一，拥</description>

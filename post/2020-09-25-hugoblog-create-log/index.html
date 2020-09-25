@@ -10,6 +10,10 @@
     <meta property="og:title" content="blog搭建日志 - Ben2277&#39;s Blog">
     <meta property="og:type" content="article">
         
+    <meta property="article:published_time" content='2020-09-25T12:00:00&#43;08:00'>
+        
+        
+    <meta property="article:modified_time" content='2020-09-25T12:00:00&#43;08:00'>
         
     <meta name="Keywords" content="MySQL, Oracle, Python, Go, Prometheus, Linux">
     <meta name="description" content="blog搭建日志">
@@ -169,7 +173,7 @@
             <h1 class="post-title">blog搭建日志</h1>
         </header>
         <date class="post-meta meta-date">
-            1年1月1日
+            2020年9月25日
         </date>
         
         <div class="post-meta">
@@ -195,17 +199,16 @@
         <div class="post-content">
             <h1 id="blog搭建日志">blog搭建日志</h1>
 <ul>
-<li>技术栈选择：
+<li><strong>技术栈选择</strong>：
 <ol>
 <li>GitHub Pages推出的目的是旨在托管GitHub库中的个人，组织或项目页面（GitHub Pages is designed to host your personal, organization, or project pages from a GitHub repository.）。<br>
 可以方便的省略购买服务器、域名等一系列复杂的操作，实现一个静态网站。</li>
 <li>Hugo是最受欢迎的开源静态站点生成器之一，拥有非常好的速度和灵活性，虽然Github Pages推荐使用Jekyll来进行渲染，但Hugo可以提供更加方便的体验</li>
 <li>GitHub Pages提供后缀为github.io的域名，如果希望可以拥有自定义的域名，可以直接在aliyun购买适合的（需要实名认证）并绑定到Github Pages<br>
- 
  </li>
 </ol>
 </li>
-<li>搭建步骤：
+<li><strong>搭建步骤</strong>：
 <ol>
 <li>注册登录Github<br>
  </li>
@@ -228,122 +231,224 @@
 <pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#998;font-style:italic"># ./hugo new site /usr/local/site/xxx_blog</span>
 </code></pre></td></tr></table>
 </div>
-</div></li>
+</div><p> </p>
+</li>
+<li>下载合适的Hugo Themes至xxx_blog/themes目录<br>
+[Hugo Themes]: (<a href="https://themes.gohugo.io">https://themes.gohugo.io</a>)或者github上的其他hugo theme都可以，这里选择了(<a href="https://github.com/flysnow-org/maupassant-hugo">https://github.com/flysnow-org/maupassant-hugo</a>)
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#998;font-style:italic"># yum install -y git</span>
+<span style="color:#998;font-style:italic"># cd /usr/local/site/xxx_blog/themes</span>
+<span style="color:#998;font-style:italic"># git clone https://github.com/flysnow-org/maupassant-hugo.git</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>注：可以使用<code>hugo server --theme=maupassant-hugo --baseUrl=&quot;https://username.github.io/&quot;</code>进行本地验证<br>
+ </p>
+</li>
+<li>使用xxx_blog/themes/maupassant-hugo/exampleSite/下的config.toml替换xxx_blog/config.toml
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#998;font-style:italic"># cp /usr/local/site/xxx_blog/themes/maupassant-hugo/exampleSite/config.toml /usr/local/site/xxx_blog/config.toml</span>
+</code></pre></td></tr></table>
+</div>
+</div><p> </p>
+</li>
+<li>根据需求调整config.toml，参考(<a href="https://github.com/flysnow-org/maupassant-hugo">https://github.com/flysnow-org/maupassant-hugo</a>)<br>
+ </li>
+<li>创建blog页面（页面会生成在站点目录的content目录中）
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">// 文章页面
+<span style="color:#998;font-style:italic"># hugo new post/first.md</span>
+<span style="color:#998;font-style:italic"># vi content/post/first.md</span>
+---
+title: <span style="color:#d14">&#34;First&#34;</span>
+date: 2020-09-24T16:47:25+08:00
+---
+     
+aaa bbb ccc
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">// 关于菜单页面
+<span style="color:#998;font-style:italic"># hugo new about/index.md</span>
+<span style="color:#998;font-style:italic"># vi content/about/index.md</span>
+---
+title: <span style="color:#d14">&#34;关于我&#34;</span>
+date: 2018-06-01 12:34:56
+description: aaa bbb ccc
+---
+     
+aaa bbb ccc
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">// 归档菜单页面
+<span style="color:#998;font-style:italic"># hugo new archives/index.md</span>
+<span style="color:#998;font-style:italic"># vi content/archives/index.md</span>
+---
+title: <span style="color:#d14">&#34;归档&#34;</span>
+description: 就归个档
+type: archives
+---
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">// 搜索页面
+<span style="color:#998;font-style:italic"># hugo new search/index.md</span>
+<span style="color:#998;font-style:italic"># vi content/search/index.md</span>
+---
+title: <span style="color:#d14">&#34;搜索&#34;</span>
+description: <span style="color:#d14">&#34;搜索页面&#34;</span>
+type: <span style="color:#d14">&#34;search&#34;</span>
+---
+</code></pre></td></tr></table>
+</div>
+</div><p> </p>
+</li>
+<li>构建Hugo站点，默认静态站点将保存到public目录
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#998;font-style:italic"># hugo</span>
+</code></pre></td></tr></table>
+</div>
+</div><p> </p>
+</li>
+<li>将静态站点上传github
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">// 进入hugo静态站点
+<span style="color:#998;font-style:italic"># cd public</span>
+      
+// git初始化
+<span style="color:#998;font-style:italic"># git init</span>
+<span style="color:#998;font-style:italic"># git config --global user.email &#34;xxxxxxxxx@xxx.com&#34;</span>
+<span style="color:#998;font-style:italic"># git config --global user.name &#34;xxxxx&#34;</span>
+<span style="color:#998;font-style:italic"># git remote add origin git@github.com:username/username.github.io.git</span>
+      
+// 添加git变更信息到本地
+<span style="color:#998;font-style:italic"># git status</span>
+<span style="color:#998;font-style:italic"># git add --all .</span>
+<span style="color:#998;font-style:italic"># git commit -m &#34;first commit&#34;</span>
+      
+// 拉取&amp;推送git变更到github（需要提前将ssh key添加到githubi，setting -&gt; SSH and GPG keys）
+<span style="color:#998;font-style:italic"># git pull origin master</span>
+<span style="color:#998;font-style:italic"># git push -u origin master</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>注：hugo静态站点变更后的推送流程：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#998;font-style:italic"># hugo</span>
+<span style="color:#998;font-style:italic"># cd public</span>
+<span style="color:#998;font-style:italic"># git add --all .</span>
+<span style="color:#998;font-style:italic"># git commit -m &#34;change xxxxxx&#34;</span>
+<span style="color:#998;font-style:italic"># git push -u origin master</span>
+</code></pre></td></tr></table>
+</div>
+</div><p> </p>
+</li>
+<li>此时通过username.github.io就可以访问到创建的hugo站点了<br>
+ </li>
+<li>如果觉得github.io不够个性，也可以用个人域名进行替换
+<ul>
+<li>aliyun购买域名，进行实名认证等</li>
+<li>在aliyun解析中添加CNAME和A记录，分别指向username.github.io和username.github.io的IP地址（IP地址可以通过ping username.github.io获取）</li>
+<li>username.github.io的settings -&gt; Github Pages的Custom domain中添加个人域名 -&gt; 启用Enforce HTTPS 
+ </li>
+</ul>
+</li>
+<li>等待DNS解析生效后访问个人域名即可<br>
+
+        <img class="mx-auto" alt="blog效果" src="bbpp.png" />   
+    
+ </li>
 </ol>
 </li>
 </ul>
-<p> 
-5. 下载合适的Hugo Themes至xxx_blog/themes目录<br>
-[Hugo Themes]: (<a href="https://themes.gohugo.io">https://themes.gohugo.io</a>)或者github上的其他hugo theme都可以，这里选择了(<a href="https://github.com/flysnow-org/maupassant-hugo">https://github.com/flysnow-org/maupassant-hugo</a>)<br>
-<code>shell # yum install -y git # cd /usr/local/site/xxx_blog/themes # git clone https://github.com/flysnow-org/maupassant-hugo.git</code><br>
-注：可以使用<code>hugo server --theme=maupassant-hugo --baseUrl=&quot;https://username.github.io/&quot;</code>进行本地验证<br>
- 
-6. 使用xxx_blog/themes/maupassant-hugo/exampleSite/下的config.toml替换xxx_blog/config.toml<br>
-<code>shell # cp /usr/local/site/xxx_blog/themes/maupassant-hugo/exampleSite/config.toml /usr/local/site/xxx_blog/config.toml</code>
- 
-7. 根据需求调整config.toml，参考(<a href="https://github.com/flysnow-org/maupassant-hugo">https://github.com/flysnow-org/maupassant-hugo</a>)<br>
- 
-8. 创建blog页面（页面会生成在站点目录的content目录中）<br>
-```shell
-// 文章页面
-# hugo new post/first.md</p>
-<table>
-<thead>
-<tr>
-<th># vi content/post/first.md</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>title: &ldquo;First&rdquo;</td>
-</tr>
-<tr>
-<td>date: 2020-09-24T16:47:25+08:00</td>
-</tr>
-<tr>
-<td>&mdash;</td>
-</tr>
-</tbody>
-</table>
-<pre><code> aaa bbb ccc
- ```
- ```shell
- // 关于菜单页面
- # hugo new about/index.md
- # vi content/about/index.md
- ---
- title: &quot;关于我&quot;
- date: 2018-06-01 12:34:56
- description: aaa bbb ccc
- ---
- 
- aaa bbb ccc
- ```
- ```shell
- // 归档菜单页面
- # hugo new archives/index.md
- # vi content/archives/index.md
- ---
- title: &quot;归档&quot;
- description: 就归个档
- type: archives
- ---
- ```  
- ```shell
- // 搜索页面
- # hugo new search/index.md
- # vi content/search/index.md
- ---
- title: &quot;搜索&quot;
- description: &quot;搜索页面&quot;
- type: &quot;search&quot;
- ---
- ```
-</code></pre>
-<p> 
-9. 构建Hugo站点，默认静态站点将保存到public目录
-<code>shell # hugo</code>
- 
-10. 将静态站点上传github
-```shell
-// 进入hugo静态站点
-# cd public</p>
-<pre><code>  // git初始化
-  # git init
-  # git config --global user.email &quot;xxxxxxxxx@xxx.com&quot;
-  # git config --global user.name &quot;xxxxx&quot;
-  # git remote add origin git@github.com:username/username.github.io.git
-  
-  // 添加git变更信息到本地
-  # git status
-  # git add --all .
-  # git commit -m &quot;first commit&quot;
-  
-  // 拉取&amp;推送git变更到github（需要提前将ssh key添加到githubi，setting -&gt; SSH and GPG keys）
-  # git pull origin master
-  # git push -u origin master
-  ```
-  注：hugo静态站点变更后的推送流程：
-  ```shell
-  # hugo
-  # cd public
-  # git add --all .
-  # git commit -m &quot;change xxxxxx&quot;
-  # git push -u origin master
-  ```
-</code></pre>
-<p> 
-11. 此时通过username.github.io就可以访问到创建的hugo站点了<br>
- 
-12. 如果觉得github.io不够个性，也可以用个人域名进行替换<br>
-- aliyun购买域名，进行实名认证等
-- 在aliyun解析中添加CNAME和A记录，分别指向username.github.io和username.github.io的IP地址（IP地址可以通过ping username.github.io获取）
-- username.github.io的settings -&gt; Github Pages的Custom domain中添加个人域名 -&gt; 启用Enforce HTTPS 
- 
-13. 等待DNS解析生效后访问个人域名即可<br>
-
-        <img class="mx-auto" alt="blog效果" src="bbpp.png" />   
-    </p>
 
         </div>
 
