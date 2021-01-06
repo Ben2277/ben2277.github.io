@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>url on Ben2277&#39;s Blog</title>
+    <link>https://ben2277.github.io/tags/url/</link>
+    <description>Recent content in url on Ben2277&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 06 Jan 2021 18:55:05 +0800</lastBuildDate><atom:link href="https://ben2277.github.io/tags/url/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>常用链接</title>
+      <link>https://ben2277.github.io/tools/2021-01-06-common-link-collection/</link>
+      <pubDate>Wed, 06 Jan 2021 18:55:05 +0800</pubDate>
+      
+      <guid>https://ben2277.github.io/tools/2021-01-06-common-link-collection/</guid>
+      <description>常用链接 MySQL相关 Oracle相关 其他</description>
+    </item>
+    
+  </channel>
+</rss>
