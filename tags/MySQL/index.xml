@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Ben2277&#39;s Blog</title>
-    <link>https://ben2277.github.io/post/</link>
-    <description>Recent content in Posts on Ben2277&#39;s Blog</description>
+    <title>MySQL on Ben2277&#39;s Blog</title>
+    <link>https://ben2277.github.io/tags/MySQL/</link>
+    <description>Recent content in MySQL on Ben2277&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 06 Jan 2021 17:54:52 +0800</lastBuildDate><atom:link href="https://ben2277.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Jan 2021 17:54:52 +0800</lastBuildDate><atom:link href="https://ben2277.github.io/tags/MySQL/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MySQL命令行工具开发 2021-01-06</title>
       <link>https://ben2277.github.io/post/2021-01-06-tools-development-log/</link>
@@ -14,15 +14,6 @@
       
       <guid>https://ben2277.github.io/post/2021-01-06-tools-development-log/</guid>
       <description>MySQL命令行工具开发 2021-01-06 离线解析MySQL SQL文本生成语法树： # ./gosqltree --help sqltree version: 1.0.0 Usage: sqltree [--sql sqltext] [--all] [--id] [--element] [--origin] [--pretty] Options: -all Print ALL. -element Print SQL element. -id Print SQL ID. -origin Print the original SQL syntax tree. -pretty Print pretty JSON. -sql string SQL text. MySQL大表DROP工具： # ./gobigdrop --help gobigdrop version: 1.0.0 Usage: gobigdrop [-h host] [-P port] [-u user] [-p password] [-d database] [-t table] [--log logfile] [--level loglevel] [--askpass] Options: -askpass ask MySQL password. -db string MySQL database. -host string MySQL host. -level string gobigdrop log level. (default &amp;quot;INFO&amp;quot;) -log string gobigdrop log file. (default</description>
-    </item>
-    
-    <item>
-      <title>blog搭建日志</title>
-      <link>https://ben2277.github.io/post/2020-09-25-hugoblog-create-log/</link>
-      <pubDate>Fri, 25 Sep 2020 12:00:00 +0800</pubDate>
-      
-      <guid>https://ben2277.github.io/post/2020-09-25-hugoblog-create-log/</guid>
-      <description>blog搭建日志 技术栈选择： GitHub Pages推出的目的是旨在托管GitHub库中的个人，组织或项目页面（GitHub Pages is designed to host your personal, organization, or project pages from a GitHub repository.）。 可以方便的省略购买服务器、域名等一系列复杂的操作，实现一个静态网站。 Hugo是最受欢迎的开源静态站点生成器之一，拥</description>
     </item>
     
   </channel>
